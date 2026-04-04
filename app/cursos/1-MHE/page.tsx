@@ -1,11 +1,12 @@
 
-import HeroCursos from "@/app/components/cursos/HeroCursos"
+import Hero from "@/app/components/Hero"
+
 
 export default function MHEPAGE() {
 
     return (
         <>
-        <HeroCursos name="MEH"/>
+        <Hero title="Modelo Educativo Híbrido (MEH)" />
         </>
     )
 }

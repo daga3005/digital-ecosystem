@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="relative bg-[#0A1628] text-white/70 border-t border-yellow-400/20 px-6 py-12 overflow-hidden">
@@ -22,10 +24,10 @@ export default function Footer() {
       <div className="animate-fadeUp [animation-delay:0.1s]">
         <h4 className="text-yellow-400 text-xs tracking-[0.12em] uppercase mb-3">Plataforma</h4>
         <ul className="space-y-2">
-          <li><a className="footer-link" href="#ecosistema">Ecosistema</a></li>
-          <li><a className="footer-link" href="#componentes">Componentes</a></li>
-          <li><a className="footer-link" href="#cop">Comunidad CoP</a></li>
-          <li><a className="footer-link" href="#recursos">Recursos</a></li>
+          <li><Link className="footer-link" href="#ecosistema">Ecosistema</Link></li>
+          <li><Link className="footer-link" href="#cursos">cursos</Link></li>
+          <li><Link className="footer-link" href="#cop">Comunidad CoP</Link></li>
+          <li><Link className="footer-link" href="#recursos">Recursos</Link></li>
         </ul>
       </div>
 
@@ -33,10 +35,10 @@ export default function Footer() {
       <div className="animate-fadeUp [animation-delay:0.2s]">
         <h4 className="text-yellow-400 text-xs tracking-[0.12em] uppercase mb-3">Herramientas</h4>
         <ul className="space-y-2">
-          <li><a className="footer-link" href="#">b-MOOC Moodle</a></li>
-          <li><a className="footer-link" href="#">Repositorios</a></li>
-          <li><a className="footer-link" href="#">Foros y Wikis</a></li>
-          <li><a className="footer-link" href="#">Comunicación</a></li>
+          <li><Link className="footer-link" href="#">b-MOOC Moodle</Link></li>
+          <li><Link className="footer-link" href="/repositorios">Repositorios</Link></li>
+          <li><Link className="footer-link" href="#">Foros y Wikis</Link></li>
+          <li><Link className="footer-link" href="#">Comunicación</Link></li>
         </ul>
       </div>
 
@@ -44,10 +46,10 @@ export default function Footer() {
       <div className="animate-fadeUp [animation-delay:0.3s]">
         <h4 className="text-yellow-400 text-xs tracking-[0.12em] uppercase mb-3">Contacto</h4>
         <ul className="space-y-2">
-          <li><a className="footer-link" href="#">Sobre el Proyecto</a></li>
-          <li><a className="footer-link" href="#">Investigadores</a></li>
-          <li><a className="footer-link" href="#">Referencias</a></li>
-          <li><a className="footer-link" href="#">Unirse</a></li>
+          <li><Link className="footer-link" href="#">Sobre el Proyecto</Link></li>
+          <li><Link className="footer-link" href="#">Investigadores</Link></li>
+          <li><Link className="footer-link" href="#">Referencias</Link></li>
+          <li><Link className="footer-link" href="#">Unirse</Link></li>
         </ul>
       </div>
 

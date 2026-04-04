@@ -1,7 +1,7 @@
 
 
 
-import HeroCursos from "@/app/components/cursos/HeroCursos"
+import HeroCursos from "@/app/components/Hero"
 
 export default function tutorialesPAGE() {
 

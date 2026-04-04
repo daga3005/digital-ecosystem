@@ -1,13 +1,8 @@
 import Link from "next/link"
-
+import { navLinks } from "@/app/definiciones/definiciones"
 
 export default function Links() {
-    const navLinks = [
-        ["Cursos", "/#cursos"],
-        ["Repositorios", "/#componentes"],
-        ["Tareas", "/#cop"],
-        ["Contacto", "/contacto"],
-    ]
+    
     return (
         <ul className="flex items-center gap-8 list-none">
             {navLinks.map(([label, href]) => (

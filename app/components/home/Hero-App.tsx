@@ -1,6 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
 
-export default function Hero() {
+export default function HeroApp() {
   return (
     <section
       id="inicio"
@@ -127,18 +128,21 @@ export default function Hero() {
               className="
                 absolute top-1/2 left-1/2
                 -translate-x-1/2 -translate-y-1/2
-                w-[130px] h-[130px] rounded-full
-                bg-gradient-to-br from-teal-600 to-yellow-400
+                w-[130px] h-[130px] rounded-full bg-white
+                
                 flex flex-col items-center justify-center
                 shadow-[0_0_60px_rgba(13,115,119,0.5)]
                 glow-pulse
-                z-20
+                z-100
               "
             >
-              <span className="text-4xl">🌐</span>
+              <Image src={'/logo_ucf.jpg'} alt="logo de la universidad" width={200} height={0}
+              className="object-contain z-10 rounded-full"
+              />
+              {/* <span className="text-4xl">🌐</span>
               <p className="text-white text-[0.62rem] font-medium tracking-wide uppercase mt-1">
                 Ecosistema Digital
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
