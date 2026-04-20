@@ -7,7 +7,7 @@ export default function RolDocentePAGE() {
 
     return (
         <>
-        <HeroCursos name="RolDocentePAGE"/>
+        <HeroCursos title="RolDocentePAGE"/>
         </>
     )
 }
