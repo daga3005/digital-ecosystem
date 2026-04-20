@@ -4,7 +4,7 @@ export default function Tareas(){
   
     return(
         <>
-        <Hero name="Tareas" />
+        <Hero title= "Tareas" />
         </>
     )
 }
