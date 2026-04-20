@@ -7,7 +7,7 @@ export default function penasmientoCriticoPAGE() {
 
     return (
         <>
-        <HeroCursos name="penasmientoCriticoPAGE"/>
+        <HeroCursos title="penasmientoCriticoPAGE"/>
         </>
     )
 }

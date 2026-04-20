@@ -7,7 +7,7 @@ export default function tutorialesPAGE() {
 
     return (
         <>
-        <HeroCursos name="tutorialesPAGE"/>
+        <HeroCursos title="tutorialesPAGE"/>
         </>
     )
 }

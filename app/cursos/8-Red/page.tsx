@@ -7,7 +7,7 @@ export default function redPAGE() {
 
     return (
         <>
-        <HeroCursos name="Red"/>
+        <HeroCursos title="Red"/>
         </>
     )
 }

@@ -7,7 +7,7 @@ export default function diseñoPAGE() {
 
     return (
         <>
-        <HeroCursos name="diseño-instructivoPAGE"/>
+        <HeroCursos title="diseño-instructivoPAGE"/>
         </>
     )
 }

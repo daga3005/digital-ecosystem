@@ -7,7 +7,7 @@ export default function evaluacionFormativaPage() {
 
     return (
         <>
-        <HeroCursos name="evaluacionFormativaPage"/>
+        <HeroCursos title="evaluacionFormativaPage"/>
         </>
     )
 }
