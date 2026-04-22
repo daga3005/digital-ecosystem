@@ -80,7 +80,7 @@ export  const cursos = [
       id: "1",
       titulo: "Banco de Recursos Híbridos",
       subtitulo: "Fuentes y herramientas para transformar tu práctica docente.",
-      enlace: "https://nube.ucf.cu/index.php/apps/files/files/7984271?dir=/Proyecto%20Ense%C3%B1anza%20aprendizaje"
+      enlace: "https://nube.ucf.cu/index.php/s/sRiyFgQbNqKrjab"
     },
     
 
