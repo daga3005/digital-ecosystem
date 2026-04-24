@@ -1,5 +1,11 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+> [!WARNING]
+> 🚧 Este proyecto está actualmente **en desarrollo** y no es funcional todavía.
+> No está listo para uso en producción.
+
+# Nombre del proyecto
+...resto del README
 ## Getting Started
 
 First, run the development server:
