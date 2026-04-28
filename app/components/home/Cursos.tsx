@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { cursos } from "@/app/definiciones/definiciones";
+import { cursos } from "@/app/definiciones/cursos";
 
 export default function ListaCursos() {
  
@@ -14,21 +14,61 @@ export default function ListaCursos() {
           button: 'bg-teal-500 hover:bg-teal-400',
           shadow: 'hover:shadow-[0_8px_25px_-10px_rgba(13,115,119,0.4)]'
         };
-      case 'yellow':
+      case 'rose':
         return {
-          bg: 'bg-[rgba(232,184,75,0.06)]',
-          border: 'border-yellow-500/30',
-          borderHover: 'hover:border-yellow-500/70',
-          button: 'bg-yellow-500 hover:bg-yellow-400',
-          shadow: 'hover:shadow-[0_8px_25px_-10px_rgba(232,184,75,0.3)]'
+          bg: 'bg-[rgba(244,63,94,0.08)]',
+          border: 'border-rose-500/30',
+          borderHover: 'hover:border-rose-500/70',
+          button: 'bg-rose-500 hover:bg-rose-400',
+          shadow: 'hover:shadow-[0_8px_25px_-10px_rgba(244,63,94,0.4)]'
         };
-      case 'cyan':
+      case 'blue':
         return {
-          bg: 'bg-[rgba(14,160,133,0.06)]',
-          border: 'border-cyan-500/30',
-          borderHover: 'hover:border-cyan-500/70',
-          button: 'bg-cyan-500 hover:bg-cyan-400',
-          shadow: 'hover:shadow-[0_8px_25px_-10px_rgba(14,160,133,0.3)]'
+          bg: 'bg-[rgba(59,130,246,0.08)]',
+          border: 'border-blue-500/30',
+          borderHover: 'hover:border-blue-500/70',
+          button: 'bg-blue-500 hover:bg-blue-400',
+          shadow: 'hover:shadow-[0_8px_25px_-10px_rgba(59,130,246,0.4)]'
+        };
+      case 'orange':
+        return {
+          bg: 'bg-[rgba(249,115,22,0.08)]',
+          border: 'border-orange-500/30',
+          borderHover: 'hover:border-orange-500/70',
+          button: 'bg-orange-500 hover:bg-orange-400',
+          shadow: 'hover:shadow-[0_8px_25px_-10px_rgba(249,115,22,0.4)]'
+        };
+      case 'purple':
+        return {
+          bg: 'bg-[rgba(168,85,247,0.08)]',
+          border: 'border-purple-500/30',
+          borderHover: 'hover:border-purple-500/70',
+          button: 'bg-purple-500 hover:bg-purple-400',
+          shadow: 'hover:shadow-[0_8px_25px_-10px_rgba(168,85,247,0.4)]'
+        };
+      case 'green':
+        return {
+          bg: 'bg-[rgba(34,197,94,0.08)]',
+          border: 'border-green-500/30',
+          borderHover: 'hover:border-green-500/70',
+          button: 'bg-green-500 hover:bg-green-400',
+          shadow: 'hover:shadow-[0_8px_25px_-10px_rgba(34,197,94,0.4)]'
+        };
+      case 'indigo':
+        return {
+          bg: 'bg-[rgba(99,102,241,0.08)]',
+          border: 'border-indigo-500/30',
+          borderHover: 'hover:border-indigo-500/70',
+          button: 'bg-indigo-500 hover:bg-indigo-400',
+          shadow: 'hover:shadow-[0_8px_25px_-10px_rgba(99,102,241,0.4)]'
+        };
+      case 'amber':
+        return {
+          bg: 'bg-[rgba(245,158,11,0.08)]',
+          border: 'border-amber-500/30',
+          borderHover: 'hover:border-amber-500/70',
+          button: 'bg-amber-500 hover:bg-amber-400',
+          shadow: 'hover:shadow-[0_8px_25px_-10px_rgba(245,158,11,0.4)]'
         };
       default:
         return {

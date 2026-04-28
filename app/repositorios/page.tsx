@@ -5,7 +5,7 @@ import { useState } from "react"
 import Hero from "../components/Hero"
 import RepoCard from "../components/repositorios/RepoCard"
 import RepoFilters from "../components/repositorios/RepoFilters"
-import { repositoriosData } from "../definiciones/definiciones"
+import { repositoriosData } from "../definiciones/repositorios"
 
 
 
