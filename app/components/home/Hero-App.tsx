@@ -1,9 +1,11 @@
-
+'use client'
 import Link from "next/link";
 
 import Carousel from "./Carousel";
+import { useSmoothScroll } from "@/app/hooks/useSmoothScroll";
 
 export default function HeroApp() {
+   const {handleSmoothScroll}= useSmoothScroll()
  
   return (
     <section
@@ -84,6 +86,7 @@ export default function HeroApp() {
                 border-2 border-teal-500 transition-all
                 hover:bg-teal-400 hover:border-teal-400 hover:-translate-y-[2px]
               "
+              onClick={(e)=>handleSmoothScroll('#ecosistema',e)}
             >
               Explorar el Ecosistema
             </Link>
@@ -95,6 +98,7 @@ export default function HeroApp() {
                 border-2 border-white/25 transition-all
                 hover:border-white/60 hover:-translate-y-[2px]
               "
+              onClick={(e)=>handleSmoothScroll('#cursos',e)}
             >
               Ver Cursos
             </Link>
