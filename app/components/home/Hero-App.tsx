@@ -1,7 +1,12 @@
-import Image from "next/image";
+'use client'
 import Link from "next/link";
 
+import Carousel from "./Carousel";
+import { useSmoothScroll } from "@/app/hooks/useSmoothScroll";
+
 export default function HeroApp() {
+   const {handleSmoothScroll}= useSmoothScroll()
+ 
   return (
     <section
       id="inicio"
@@ -59,7 +64,7 @@ export default function HeroApp() {
               animate-fadeSlideUp [animation-delay:0.15s]
             "
           >
-            El <em className="italic text-yellow-400">Ecosistema Digital</em> en la Formación Continua de Docentes
+            <em className="italic text-yellow-400">Ecosistema Digital</em> en la Formación Continua de Docentes
           </h1>
 
           <p
@@ -81,6 +86,7 @@ export default function HeroApp() {
                 border-2 border-teal-500 transition-all
                 hover:bg-teal-400 hover:border-teal-400 hover:-translate-y-[2px]
               "
+              onClick={(e)=>handleSmoothScroll('#ecosistema',e)}
             >
               Explorar el Ecosistema
             </Link>
@@ -92,6 +98,7 @@ export default function HeroApp() {
                 border-2 border-white/25 transition-all
                 hover:border-white/60 hover:-translate-y-[2px]
               "
+              onClick={(e)=>handleSmoothScroll('#cursos',e)}
             >
               Ver Cursos
             </Link>
@@ -101,49 +108,8 @@ export default function HeroApp() {
         {/* RIGHT SIDE – DIAGRAMA */}
         <div className="flex justify-center items-center animate-fadeSlideUp [animation-delay:0.6s]">
           <div className="relative w-full max-w-[460px] aspect-square">
-
-            {/* ORBIT RINGS */}
-            <div
-              className="
-                absolute top-1/2 left-1/2
-                w-[230px] h-[230px]
-                border border-dashed border-amber-300 rounded-full
-                -translate-x-1/2 -translate-y-1/2
-                animate-spinSlow 
-              "
-            />
-
-            <div
-              className="
-                absolute top-1/2 left-1/2
-                w-[350px] h-[350px]
-                border border-dashed border-teal-300 rounded-full
-                -translate-x-1/2 -translate-y-1/2
-                animate-spinReverse
-              "
-            />
-
-            {/* CENTER NODE */}
-            <div
-              className="
-                absolute top-1/2 left-1/2
-                -translate-x-1/2 -translate-y-1/2
-                w-[130px] h-[130px] rounded-full bg-white
-                
-                flex flex-col items-center justify-center
-                shadow-[0_0_60px_rgba(13,115,119,0.5)]
-                glow-pulse
-                z-100
-              "
-            >
-              <Image src={'/logo_ucf.jpg'} alt="logo de la universidad" width={200} height={0}
-              className="object-contain z-10 rounded-full"
-              />
-              {/* <span className="text-4xl">🌐</span>
-              <p className="text-white text-[0.62rem] font-medium tracking-wide uppercase mt-1">
-                Ecosistema Digital
-              </p> */}
-            </div>
+           <Carousel/>
+          
           </div>
         </div>
       </div>

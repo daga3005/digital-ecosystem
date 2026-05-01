@@ -6,6 +6,14 @@ const nextConfig: NextConfig = {
   trailingSlash: true, // Opcional, ayuda con las rutas
   images: {
     unoptimized: true, // Necesario si usas el componente <Image /> de Next.js
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'pixabay.com',
+        port: '',
+        pathname: '/**',
+      }
+    ]
   },
 };
 

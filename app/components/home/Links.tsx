@@ -1,14 +1,18 @@
-import Link from "next/link"
-import { navLinks } from "@/app/definiciones/definiciones"
+"use client";
+import Link from "next/link";
+
+import { navLinks } from "@/app/definiciones/navLinks";
+import { useSmoothScroll } from "@/app/hooks/useSmoothScroll";
 
 export default function Links() {
-    
+    const {handleSmoothScroll}= useSmoothScroll()
     return (
         <ul className="flex items-center gap-8 list-none">
             {navLinks.map(([label, href]) => (
                 <li key={href}>
                     <Link
                         href={href}
+                        onClick={(e) => handleSmoothScroll(href, e)}
                         className="
                   text-white/80 text-[0.9rem] tracking-wide relative transition
                   hover:text-white
@@ -21,7 +25,6 @@ export default function Links() {
                     </Link>
                 </li>
             ))}
-
         </ul>
-    )
+    );
 }

@@ -1,4 +1,9 @@
+'use client'
+import { useSmoothScroll } from "@/app/hooks/useSmoothScroll";
+import Link from "next/link";
+
 export default function Cta() {
+  const {handleSmoothScroll}= useSmoothScroll()
   return (
     <section
       id="contacto"
@@ -33,7 +38,7 @@ export default function Cta() {
       <div className="flex flex-wrap justify-center gap-4">
 
         {/* GOLD BUTTON */}
-        <a
+        <Link
           href="#"
           className="
             bg-yellow-400 border-2 border-yellow-400 text-[#0A1628]
@@ -42,12 +47,13 @@ export default function Cta() {
             hover:opacity-85 hover:-translate-y-[2px]
             font-dmsans
           "
+          onClick={(e)=>handleSmoothScroll('#',e)}
         >
           Acceder a la CoP
-        </a>
+        </Link>
 
         {/* OUTLINE BUTTON */}
-        <a
+        <Link
           href="#ecosistema"
           className="
             bg-transparent border-2 border-white/40 text-white
@@ -56,9 +62,10 @@ export default function Cta() {
             hover:border-white hover:-translate-y-[2px]
             font-dmsans
           "
+           onClick={(e)=>handleSmoothScroll('#ecosistema',e)}
         >
           Conocer más
-        </a>
+        </Link>
 
       </div>
     </section>
