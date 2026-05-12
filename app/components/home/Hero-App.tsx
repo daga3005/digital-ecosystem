@@ -31,7 +31,7 @@ export default function HeroApp() {
           absolute inset-0 opacity-[0.25]
           bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),
               linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)]
-          bg-[size:60px_60px]
+          bg-size-[60px_60px]
         "
       />
 
@@ -39,12 +39,12 @@ export default function HeroApp() {
       <div
         className="
           relative z-10 max-w-[1200px] mx-auto
-          grid grid-cols-1 md:grid-cols-2 gap-16
+          grid grid-cols-1 md:grid-cols-[45%_55%] gap-5
           px-8 py-20 items-center
         "
       >
         {/* LEFT SIDE */}
-        <div className="animate-fadeSlideUp">
+        <div className="animate-fadeSlideUp self-start">
           <div
             className="
               inline-flex items-center gap-2
@@ -107,7 +107,7 @@ export default function HeroApp() {
 
         {/* RIGHT SIDE – DIAGRAMA */}
         <div className="flex justify-center items-center animate-fadeSlideUp [animation-delay:0.6s]">
-          <div className="relative w-full max-w-[460px] aspect-square">
+          <div className="relative w-full max-w-none aspect-square">
            <Carousel/>
           
           </div>

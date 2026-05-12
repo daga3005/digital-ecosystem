@@ -5,6 +5,7 @@ import { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import { images } from "@/app/definiciones/imagenes";
 
 export default function Carousel() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
@@ -30,11 +31,7 @@ export default function Carousel() {
     };
   }, [emblaApi, onSelect]);
 
-  const images = [
-    { src: "/carousel/rel-blue.png", alt: "Ecosistema Digital" },
-    { src: "/carousel/green.jpg", alt: "Formación Docente" },
-    { src: "/carousel/take.png", alt: "Recursos Colaborativos" },
-  ];
+  
 
   return (
     <div className="relative w-full group">
