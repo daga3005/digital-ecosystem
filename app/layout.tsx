@@ -3,10 +3,9 @@ import type { Metadata } from "next";
 import { Playfair_Display, DM_Sans } from "next/font/google"; 
 import "./globals.css";
 
-import Navbar from "./components/Navbar";
-
-
-
+import Navbar from "./components/Header";
+import FloatingSurveyButton from "./components/FloatingSurveyButton";
+import SurveyInvitation from "./components/SurveyInvitation";
 
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" });
  const dmsans = DM_Sans({ subsets: ["latin"], variable: "--font-dmsans" });
@@ -27,10 +26,9 @@ export default function RootLayout({
        className={`${playfair.variable} ${dmsans.variable} antialiased`} 
       >
         <Navbar />
-
         {children}
-
-       
+        <FloatingSurveyButton />
+        <SurveyInvitation />
       </body>
     </html>
   );

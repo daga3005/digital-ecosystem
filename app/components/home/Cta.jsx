@@ -43,7 +43,7 @@ export default function Cta() {
           className="
             bg-yellow-400 border-2 border-yellow-400 text-[#0A1628]
             px-8 py-3 rounded-lg font-medium text-[0.95rem]
-            transition-all duration-200
+            transition-all duration-200 
             hover:opacity-85 hover:-translate-y-[2px]
             font-dmsans
           "

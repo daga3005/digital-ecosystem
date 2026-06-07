@@ -46,14 +46,9 @@ export default function Definition() {
               relative z-10 font-playfair italic text-[1.1rem]
               text-white/90 leading-[1.75] mb-5
             ">
-              "Red interconectada de actores, recursos, plataformas y procesos que interactúan entre sí en un entorno digital común, creando valor y conocimiento de forma colaborativa y evolutiva."
+              Red interconectada de actores, recursos, plataformas y procesos que interactúan entre sí en un entorno digital común, creando valor y conocimiento de forma colaborativa y evolutiva.
             </p>
 
-            <span className="
-              text-yellow-400 text-sm tracking-[0.05em] font-medium
-            ">
-              — Pérez M. A., 2025, pág. 1
-            </span>
           </div>
 
           {/* DEFINITION POINTS */}
