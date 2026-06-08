@@ -1,7 +1,10 @@
 import Link from "next/link";
 
-
-export default function LinksMobile({ menuOpen, setMenuOpen }) {
+interface LinksMobileProps {
+  menuOpen: boolean;
+  setMenuOpen: (value: boolean) => void;
+}
+export default function LinksMobile({ menuOpen, setMenuOpen }: LinksMobileProps) {
     const links = [
         { id: 1, name: "Inicio", href: "/dashboard" },
         { id: 2, name: "Cursos", href: "/#cursos" },
