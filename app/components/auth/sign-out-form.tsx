@@ -4,8 +4,10 @@ import { signingOut } from "@/app/lib/actions";
 import { useActionState } from "react";
 
 export default function LogoutForm() {
-  const [errorMessage, formAction, isPending] = useActionState(signingOut, undefined)
-
+  const [errorMessage, formAction, isPending] = useActionState<string | undefined, FormData>(
+    signingOut, 
+    undefined
+  )
   return (
     <section className="min-h-screen flex items-center justify-center bg-[#0A1628] px-6 py-20">
       <div className="bg-white/10 backdrop-blur-xl border border-white/20 p-10 rounded-2xl w-full max-w-md shadow-xl text-center">

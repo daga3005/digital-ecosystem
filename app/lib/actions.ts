@@ -32,10 +32,18 @@ export async function authenticate(
   return undefined;
 }
 
-export async function signingOut() {
-  await signOut({ redirectTo: '/' })
+// ✅ Versión correcta para useActionState
+export async function signingOut(
+  prevState: string | undefined,  // ← primer parámetro requerido
+  formData: FormData              // ← segundo parámetro requerido
+): Promise<string | undefined> {  // ← tipo de retorno explícito
+  try {
+    await signOut({ redirectTo: '/' })
+    return undefined  // ← éxito: no hay mensaje de error
+  } catch (error) {
+    return 'Error al cerrar sesión. Intenta de nuevo.'  // ← error: mensaje
+  }
 }
-
 const sql = postgres(process.env.POSTGRES_URL!, { ssl: false });
 // Esquema de validación para signup
 const SignupSchema = z.object({
