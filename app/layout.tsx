@@ -6,6 +6,7 @@ import "./globals.css";
 import Navbar from "./components/Header";
 import FloatingSurveyButton from "./components/FloatingSurveyButton";
 import SurveyInvitation from "./components/SurveyInvitation";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" });
  const dmsans = DM_Sans({ subsets: ["latin"], variable: "--font-dmsans" });
@@ -27,6 +28,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <ScrollToTopButton/>
         <FloatingSurveyButton />
         <SurveyInvitation />
       </body>

@@ -25,9 +25,9 @@ export default function Footer() {
         <h4 className="text-yellow-400 text-xs tracking-[0.12em] uppercase mb-3">Plataforma</h4>
         <ul className="space-y-2">
           <li><Link className="footer-link" href="#ecosistema">Ecosistema</Link></li>
-          <li><Link className="footer-link" href="#cursos">cursos</Link></li>
+           <li><Link className="footer-link" href="#fuentes">Fuentes</Link></li>
           <li><Link className="footer-link" href="#cop">Comunidad CoP</Link></li>
-          <li><Link className="footer-link" href="#recursos">Recursos</Link></li>
+         
         </ul>
       </div>
 
@@ -35,7 +35,7 @@ export default function Footer() {
       <div className="animate-fadeUp [animation-delay:0.2s]">
         <h4 className="text-yellow-400 text-xs tracking-[0.12em] uppercase mb-3">Herramientas</h4>
         <ul className="space-y-2">
-          <li><Link className="footer-link" href="#">b-MOOC Moodle</Link></li>
+          <li><Link className="footer-link" href="/curso">Cursos</Link></li>
           <li><Link className="footer-link" href="/repositorios">Repositorios</Link></li>
           <li><Link className="footer-link" href="#">Foros y Wikis</Link></li>
           <li><Link className="footer-link" href="#">Comunicación</Link></li>
@@ -47,9 +47,9 @@ export default function Footer() {
         <h4 className="text-yellow-400 text-xs tracking-[0.12em] uppercase mb-3">Contacto</h4>
         <ul className="space-y-2">
           <li><Link className="footer-link" href="/Resumen-del-proyecto">Sobre el Proyecto</Link></li>
-          <li><Link className="footer-link" href="/revisores">Investigadores</Link></li>
+          <li><Link className="footer-link" href="/revisores">Revisores</Link></li>
           <li><Link className="footer-link" href="#">Referencias</Link></li>
-          <li><Link className="footer-link" href="#">Unirse</Link></li>
+          <li><Link className="footer-link" href="/contacto">Contacto</Link></li>
         </ul>
       </div>
 

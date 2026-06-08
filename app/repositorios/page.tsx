@@ -4,8 +4,8 @@
 import { useState } from "react"
 import Hero from "../components/Hero"
 import RepoCard from "../components/repositorios/RepoCard"
-import RepoFilters from "../components/repositorios/RepoFilters"
 import { repositoriosData } from "../definiciones/repositorios"
+import CardsFilters from "../components/CardsFilters"
 
 
 
@@ -26,7 +26,7 @@ export default function RepositoriosPage() {
       <div className="max-w-7xl mx-auto px-4 pb-20">
         
         {/* Barra de búsqueda solo por nombre */}
-        <RepoFilters 
+        <CardsFilters 
           searchTerm={searchTerm}
           onSearchChange={setSearchTerm}
         />

@@ -24,9 +24,9 @@ export default function ContactPage() {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-white font-semibold mb-1">Email</h3>
-                  <Link href="mailto:investigacion.docente@institucion.edu" 
+                  <Link href="mailto:amhfonseca@ucf.edu.cu" 
                      className="text-white/60 hover:text-yellow-400 transition-colors text-sm break-all">
-                    investigacion.docente@institucion.edu
+                    amhfonseca@ucf.edu.cu
                   </Link>
                 </div>
               </div>
@@ -40,9 +40,9 @@ export default function ContactPage() {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-white font-semibold mb-1">Teléfono</h3>
-                  <Link href="tel:+535555555555" 
+                  <Link href="tel:+5355850892" 
                      className="text-white/60 hover:text-teal-400 transition-colors">
-                    +53 5555 5555
+                    +53 55850892
                   </Link>
                 </div>
               </div>
@@ -72,19 +72,6 @@ export default function ContactPage() {
                   <p className="text-white/60">Lun - Vie: 9am - 5pm</p>
                 </div>
               </div>
-            </div>
-          </div>
-
-          {/* Social Links */}
-          <div className="text-center">
-            <p className="text-white/50 mb-6">Síguenos en</p>
-            <div className="flex gap-3 justify-center flex-wrap">
-              {["🐦", "🔗", "💻", "📚", "📷", "🎥"].map((icon, i) => (
-                <Link key={i} href="#" 
-                   className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-lg hover:bg-white/10 hover:scale-110 transition-all duration-300">
-                  {icon}
-                </Link>
-              ))}
             </div>
           </div>
 

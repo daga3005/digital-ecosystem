@@ -121,12 +121,12 @@ export default function ListaFuentes() {
           </h2>
 
           <p className="text-white/70 max-w-[680px] mx-auto text-[0.98rem]">
-            8 cursos especializados para fortalecer tus competencias en el
+            8 fuentes especializados para fortalecer tus competencias en el
             Modelo Educativo Híbrido y la innovación pedagógica
           </p>
         </div>
 
-        {/* CONTADOR DE CURSOS */}
+        {/* CONTADOR DE Fuentes */}
         <div className="text-center mb-8">
           <span className="text-white/40 text-sm">
             📚 {fuentes.length} fuentes disponibles

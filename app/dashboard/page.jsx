@@ -15,10 +15,8 @@ export default function Dashboard() {
     <div className="flex flex-col min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <HeroApp/>
       <Definition/>
-      
       <Introduccion/>
       <Fuentes/>
-      
       <Cop/>
       <Cta/>
       <Footer/>

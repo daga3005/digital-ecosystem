@@ -14,10 +14,10 @@ export default function Logo() {
         "
       >
         <Image
-          src="/LogoSoloSinContorno.png"  // Cambia por la ruta de tu imagen
+          src="/LogoSoloSinContorno.png"  
           alt="EcoDigital Logo"
-          width={36}
-          height={36}
+          width={38}
+          height={38}
           className="w-full h-full object-cover"
         />
       </div>
@@ -31,7 +31,7 @@ export default function Logo() {
             uppercase font-dmsans
           "
         >
-          Formación Docente
+          Formación Docente/Modelo Educativo Híbrido (Semi-presencial)
         </span>
       </div>
     </Link>

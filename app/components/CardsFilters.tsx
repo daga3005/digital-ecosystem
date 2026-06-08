@@ -1,15 +1,15 @@
-// app/components/RepoSearch.tsx
+
 interface SearchProps {
   searchTerm: string
   onSearchChange: (term: string) => void
 }
 
-export default function RepoFilters({ searchTerm, onSearchChange }: SearchProps) {
+export default function CardsFilters({ searchTerm, onSearchChange }: SearchProps) {
   return (
     <div className="relative max-w-md mx-auto mb-12 -mt-8">
       <input
         type="text"
-        placeholder="🔍 Buscar repositorios por nombre..."
+        placeholder="🔍 Buscar por nombre..."
         value={searchTerm}
         onChange={(e) => onSearchChange(e.target.value)}
         className="

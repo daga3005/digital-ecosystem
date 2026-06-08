@@ -52,10 +52,6 @@ export default function Revisores() {
         </div>
       </div>
 
-      {/* Footer note */}
-      <p className="relative text-center text-blue-400/40 text-xs mt-16 tracking-wide">
-        AITEC · Instituto Superior Universitario Almirante Illingworth
-      </p>
     </section>
   );
 }
