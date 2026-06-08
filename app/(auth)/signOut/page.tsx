@@ -5,7 +5,7 @@ import { Suspense } from "react";
 
 export default async function SignOutPage(){
    
-    // Si ya está logueado, redirigir al dashboard
+    
     
     return(
         <Suspense>

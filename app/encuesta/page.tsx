@@ -10,7 +10,7 @@ export default function SurveyPage() {
 
   useEffect(() => {
     // Reemplaza con tu URL de Google Forms
-    const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/TU_ID_DE_FORM/viewform";
+    const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSfDvtFHqBf1PK6OiSTC9545nPwlxjkHx965KE-y7TXc_QvkCw/viewform?embedded=true";
     setFormUrl(GOOGLE_FORM_URL);
     setIsLoading(false);
   }, []);
