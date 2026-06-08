@@ -41,7 +41,7 @@ export default function LinksDestop() {
             ))}
 
             
-                <Link
+                {/* <Link
                     href="/signIn"
                     className="hidden md:block bg-yellow-400 text-[#0A1628] px-5 py-2 rounded-md font-medium hover:bg-yellow-300 transition-all duration-300 hover:scale-105"
                 >
@@ -52,7 +52,7 @@ export default function LinksDestop() {
                 className="hidden md:block bg-yellow-400 text-[#0A1628] px-5 py-2 rounded-md font-medium hover:bg-yellow-300 transition-all duration-300 hover:scale-105"
             >
                 Cerrar Sessión
-            </Link >
+            </Link > */}
             
 
 

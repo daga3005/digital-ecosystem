@@ -11,10 +11,8 @@ export const authConfig = {
       
      const publicRoutes = ['/signIn', '/signUp'];
       const protectedRoutes = [
-        '/dashboard',
-        '/repositorios',
-        '/contacto',
-        '/dashboard/#cursos',
+        '/a'
+        
         
       ];
       

@@ -31,7 +31,7 @@ export default function LinksMobile({ menuOpen, setMenuOpen }: LinksMobileProps)
                         {item.name}
                     </Link>
                 ))}
-                <Link
+                {/* <Link
                     href="/signUp"
                     className="px-8 py-3 rounded-md bg-yellow-400 text-[#0A1628] font-bold hover:bg-yellow-300 transition-all duration-300 mt-4"
                     onClick={() => setMenuOpen(false)}
@@ -44,7 +44,7 @@ export default function LinksMobile({ menuOpen, setMenuOpen }: LinksMobileProps)
                     onClick={() => setMenuOpen(false)}
                 >
                     Sign Out
-                </Link >
+                </Link > */}
             </div>
         </div>
     )
