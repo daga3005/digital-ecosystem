@@ -1,6 +1,6 @@
 import HeroApp from "../components/home/Hero-App";
 import Definition from "../components/home/Definition"
-import Cursos from "../components/home/Cursos"
+import Fuentes from "../components/home/Fuentes"
 import Cop from "../components/home/Cop"
 import Cta from "../components/home/Cta"
 import Introduccion from "../components/home/Introduction";
@@ -17,7 +17,7 @@ export default function Dashboard() {
       <Definition/>
       
       <Introduccion/>
-      <Cursos/>
+      <Fuentes/>
       
       <Cop/>
       <Cta/>

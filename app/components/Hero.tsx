@@ -1,4 +1,4 @@
-// app/components/Hero.tsx - Versión completa
+
 interface HeroProps {
   title: string
   subtitle?: string

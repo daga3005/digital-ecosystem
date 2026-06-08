@@ -64,7 +64,7 @@ export default function HeroApp() {
               animate-fadeSlideUp [animation-delay:0.15s]
             "
           >
-            <em className="italic text-yellow-400">Ecosistema Digital</em> en la Formación Continua de Docentes
+            <em className="italic text-yellow-400">Ecosistema Digital</em> para la Formación Continua de Docentes (Semi-presencial)
           </h1>
 
           <p
@@ -92,7 +92,7 @@ export default function HeroApp() {
             </Link>
 
             <Link
-              href="#cursos"
+              href="#fuentes"
               className="
                 bg-transparent text-white px-8 py-3 rounded-lg font-normal
                 border-2 border-white/25 transition-all
@@ -100,7 +100,7 @@ export default function HeroApp() {
               "
               onClick={(e)=>handleSmoothScroll('#cursos',e)}
             >
-              Ver Cursos
+              Ver Fuentes
             </Link>
           </div>
         </div>

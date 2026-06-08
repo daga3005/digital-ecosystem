@@ -1,7 +1,7 @@
 
 
 
-export  const cursos = [
+export  const fuentes = [
  {
   id: 1,
   titulo: "Fuentes sobre el Modelo Educativo Híbrido (MEH)",

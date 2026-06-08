@@ -25,9 +25,7 @@ export function useNavigation() {
 
   const handleGoForward = () => {
     router.forward();
-    setTimeout(() => {
-      setCanGoBack(true);
-    }, 100);
+    
   };
 
   return { canGoBack, handleGoBack, handleGoForward };

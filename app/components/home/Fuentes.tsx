@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { cursos } from "@/app/definiciones/cursos";
+import { fuentes } from "@/app/definiciones/fuentes";
 
-export default function ListaCursos() {
+export default function ListaFuentes() {
  
 
   const getColorStyles = (color: string) => {
@@ -83,7 +83,7 @@ export default function ListaCursos() {
 
   return (
     <section
-      id="cursos"
+      id="fuentes"
       className="
         relative py-24 md:py-28 overflow-hidden
         bg-gradient-to-b from-[rgba(4,30,70,0.98)] to-[rgba(6,48,110,0.97)]
@@ -129,17 +129,17 @@ export default function ListaCursos() {
         {/* CONTADOR DE CURSOS */}
         <div className="text-center mb-8">
           <span className="text-white/40 text-sm">
-            📚 {cursos.length} cursos disponibles
+            📚 {fuentes.length} fuentes disponibles
           </span>
         </div>
 
         {/* GRID DE CURSOS */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {cursos.map((curso, index) => {
-            const styles = getColorStyles(curso.color);
+          {fuentes.map((fuente, index) => {
+            const styles = getColorStyles(fuente.color);
             return (
               <div
-                key={curso.id}
+                key={fuente.id}
                 className={`
                   group rounded-2xl p-6 transition-all duration-300
                   ${styles.bg} ${styles.border} ${styles.borderHover} ${styles.shadow}
@@ -148,21 +148,21 @@ export default function ListaCursos() {
                 style={{ animationDelay: `${0.05 + index * 0.03}s` }}
               >
                 {/* ICONO */}
-                <div className="text-5xl mb-4">{curso.icono}</div>
+                <div className="text-5xl mb-4">{fuente.icono}</div>
 
                 {/* TÍTULO */}
                 <h3 className="text-white text-xl font-semibold mb-3 font-playfair leading-tight">
-                  {curso.titulo}
+                  {fuente.titulo}
                 </h3>
 
                 {/* DESCRIPCIÓN */}
                 <p className="text-white/60 text-sm leading-relaxed mb-6 min-h-[70px]">
-                  {curso.descripcion}
+                  {fuente.descripcion}
                 </p>
 
                 {/* BOTÓN */}
                 <Link
-                  href={curso.url}
+                  href={fuente.url}
                   target="blank"
                   rel="noopener noreferrer"
                   className={`
@@ -173,7 +173,7 @@ export default function ListaCursos() {
                     hover:translate-x-1 group-hover:shadow-lg
                   `}
                 >
-                  <span>Ver curso</span>
+                  <span>Ver fuente</span>
                   <span className="text-lg transition-transform group-hover:translate-x-1">→</span>
                 </Link>
               </div>

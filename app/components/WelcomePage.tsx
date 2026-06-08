@@ -37,16 +37,16 @@ export default function WelcomePage() {
 
           {/* Botón CTA - Login*/}
           <div className="mt-10 animate-fadeSlideUp [animation-delay:0.5s]">
-            <Link href={'/signIn'} className="group relative inline-flex items-center gap-2 bg-gradient-to-br from-blue-600 via-teal-600 to-blue-700 text-white font-semibold px-8 py-3 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-yellow-400/25 border border-blue-400/30 hover:border-yellow-400/50">
+            <Link href={'/dashboard'} className="group relative inline-flex items-center gap-2 bg-gradient-to-br from-blue-600 via-teal-600 to-blue-700 text-white font-semibold px-8 py-3 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-yellow-400/25 border border-blue-400/30 hover:border-yellow-400/50">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
               </svg>
               Acceder al Ecosistema
               <span className="absolute -top-1 -right-1 w-3 h-3 bg-yellow-400 rounded-full animate-ping"></span>
             </Link>
-            <p className="text-blue-200/50 text-sm mt-4">
+            {/* <p className="text-blue-200/50 text-sm mt-4">
               ¿Nuevo en el ecosistema? <Link href="/signUp" className="text-yellow-400 hover:text-yellow-300 transition-colors">Crear cuenta</Link>
-            </p>
+            </p> */}
           </div>
         </div>
       </section>
