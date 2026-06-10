@@ -1,12 +1,12 @@
 // components/Header.tsx - Versión refactorizada
 "use client";
 
-import LinksDestop from "./header/LinksDestop";
-import LinksMobile from "./header/LinksMobile";
-import NavigationButtons from "./header/NavigationButtons";
-import Logo from "./header/Logo";
-import MobileMenuButton from "./header/MobileMenuButton";
-import { getHeaderStyles } from "./header/HeaderStyles";
+import LinksDestop from "./LinksDestop";
+import LinksMobile from "./LinksMobile";
+import NavigationButtons from "./NavigationButtons";
+import Logo from "./Logo";
+import MobileMenuButton from "./MobileMenuButton";
+import { getHeaderStyles } from "./HeaderStyles";
 import { useScrollEffect } from "@/app/hooks/useScrollEffect";
 import { useMobileMenu } from "@/app/hooks/useMobileMenu";
 

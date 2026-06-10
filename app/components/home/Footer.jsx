@@ -47,7 +47,7 @@ export default function Footer() {
         <h4 className="text-yellow-400 text-xs tracking-[0.12em] uppercase mb-3">Contacto</h4>
         <ul className="space-y-2">
           <li><Link className="footer-link" href="/Resumen-del-proyecto">Sobre el Proyecto</Link></li>
-          <li><Link className="footer-link" href="/revisores">Revisores</Link></li>
+          <li><Link className="footer-link" href="/revisores">Investigadores</Link></li>
           <li><Link className="footer-link" href="#">Referencias</Link></li>
           <li><Link className="footer-link" href="/contacto">Contacto</Link></li>
         </ul>

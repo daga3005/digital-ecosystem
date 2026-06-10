@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Cop() {
   return (
     <section id="cop" className="bg-[#F7F3EB] py-24 px-6">
@@ -79,75 +81,101 @@ export default function Cop() {
             {/* FEATURES */}
             <div className="flex flex-col">
 
-              <div className="flex items-start gap-3 py-4 border-b border-gray-200">
-                <div className="
-                  w-9 h-9 bg-[rgba(13,115,119,0.08)] rounded-lg
-                  flex items-center justify-center text-[1.1rem]
-                ">
-                  📝
-                </div>
-                <div>
-                  <h4 className="font-dmsans text-[0.9rem] font-medium text-[#0A1628] mb-1">
-                    Buenas Prácticas
-                  </h4>
-                  <p className="text-gray-600 text-[0.8rem]">
-                    Los docentes comparten estrategias metodológicas efectivas con el MEH.
-                  </p>
-                </div>
-              </div>
+  {/* Buenas Prácticas */}
+  <div className="
+    flex items-start gap-3 py-4 border-b border-gray-200
+    transition-all duration-200 rounded-lg p-3 -mx-3
+    hover:border-2 hover:border-red-500 hover:bg-red-50/30
+  ">
+    <div className="
+      w-9 h-9 bg-[rgba(13,115,119,0.08)] rounded-lg
+      flex items-center justify-center text-[1.1rem]
+    ">
+      📝
+    </div>
+    <div className="flex-1">
+      <h4 className="font-dmsans text-[0.9rem] font-medium text-[#0A1628] mb-1">
+        Buenas Prácticas
+      </h4>
+      <p className="text-gray-600 text-[0.8rem]">
+        Los docentes comparten estrategias metodológicas efectivas con el MEH.
+      </p>
+    </div>
+  </div>
 
-              <div className="flex items-start gap-3 py-4 border-b border-gray-200">
-                <div className="
-                  w-9 h-9 bg-[rgba(13,115,119,0.08)] rounded-lg
-                  flex items-center justify-center text-[1.1rem]
-                ">
-                  ❓
-                </div>
-                <div>
-                  <h4 className="font-dmsans text-[0.9rem] font-medium text-[#0A1628] mb-1">
-                    Resolución Colectiva
-                  </h4>
-                  <p className="text-gray-600 text-[0.8rem]">
-                    Las dudas se resuelven en comunidad, con el apoyo de pares y expertos.
-                  </p>
-                </div>
-              </div>
+  {/* Resolución Colectiva */}
+  <div className="
+    flex items-start gap-3 py-4 border-b border-gray-200
+    transition-all duration-200 rounded-lg p-3 -mx-3
+    hover:border-2 hover:border-red-500 hover:bg-red-50/30
+  ">
+    <div className="
+      w-9 h-9 bg-[rgba(13,115,119,0.08)] rounded-lg
+      flex items-center justify-center text-[1.1rem]
+    ">
+      ❓
+    </div>
+    <div className="flex-1">
+      <h4 className="font-dmsans text-[0.9rem] font-medium text-[#0A1628] mb-1">
+        Resolución Colectiva
+      </h4>
+      <p className="text-gray-600 text-[0.8rem]">
+        Las dudas se resuelven en comunidad, con el apoyo de pares y expertos.
+      </p>
+    </div>
+  </div>
 
-              <div className="flex items-start gap-3 py-4 border-b border-gray-200">
-                <div className="
-                  w-9 h-9 bg-[rgba(13,115,119,0.08)] rounded-lg
-                  flex items-center justify-center text-[1.1rem]
-                ">
-                  🔬
-                </div>
-                <div>
-                  <h4 className="font-dmsans text-[0.9rem] font-medium text-[#0A1628] mb-1">
-                    Hallazgos e Investigación
-                  </h4>
-                  <p className="text-gray-600 text-[0.8rem]">
-                    Se documentan y difunden los descubrimientos pedagógicos del grupo.
-                  </p>
-                </div>
-              </div>
+  {/* Hallazgos e Investigación (CON enlace "Ver más") */}
+  <div className="
+    flex items-start gap-3 py-4 border-b border-gray-200
+    transition-all duration-200 rounded-lg p-3 -mx-3
+    hover:border-2 hover:border-red-500 hover:bg-red-50/30
+  ">
+    <div className="
+      w-9 h-9 bg-[rgba(13,115,119,0.08)] rounded-lg
+      flex items-center justify-center text-[1.1rem]
+    ">
+      🔬
+    </div>
+    <div className="flex-1">
+      <h4 className="font-dmsans text-[0.9rem] font-medium text-[#0A1628] mb-1">
+        Hallazgos e Investigación
+      </h4>
+      <p className="text-gray-600 text-[0.8rem] mb-2">
+        Se documentan y difunden los descubrimientos pedagógicos del grupo.
+      </p>
+      <Link 
+        href="#" 
+        className="inline-block text-sm font-medium text-red-600 hover:text-red-700 transition-colors"
+      >
+        Ver más →
+      </Link>
+    </div>
+  </div>
 
-              <div className="flex items-start gap-3 py-4">
-                <div className="
-                  w-9 h-9 bg-[rgba(13,115,119,0.08)] rounded-lg
-                  flex items-center justify-center text-[1.1rem]
-                ">
-                  🌐
-                </div>
-                <div>
-                  <h4 className="font-dmsans text-[0.9rem] font-medium text-[#0A1628] mb-1">
-                    Entorno 100% Virtual
-                  </h4>
-                  <p className="text-gray-600 text-[0.8rem]">
-                    Accesible en cualquier momento y lugar para todos los docentes.
-                  </p>
-                </div>
-              </div>
+  {/* Entorno 100% Virtual */}
+  <div className="
+    flex items-start gap-3 py-4
+    transition-all duration-200 rounded-lg p-3 -mx-3
+    hover:border-2 hover:border-red-500 hover:bg-red-50/30
+  ">
+    <div className="
+      w-9 h-9 bg-[rgba(13,115,119,0.08)] rounded-lg
+      flex items-center justify-center text-[1.1rem]
+    ">
+      🌐
+    </div>
+    <div className="flex-1">
+      <h4 className="font-dmsans text-[0.9rem] font-medium text-[#0A1628] mb-1">
+        Entorno 100% Virtual
+      </h4>
+      <p className="text-gray-600 text-[0.8rem]">
+        Accesible en cualquier momento y lugar para todos los docentes.
+      </p>
+    </div>
+  </div>
 
-            </div>
+</div>
           </div>
 
         </div>

@@ -40,7 +40,7 @@ export default function ContactPage() {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-white font-semibold mb-1">Teléfono</h3>
-                  <Link href="tel:+5355850892" 
+                  <Link href="https://wa.me/5355850892" 
                      className="text-white/60 hover:text-teal-400 transition-colors">
                     +53 55850892
                   </Link>
@@ -78,7 +78,7 @@ export default function ContactPage() {
           {/* CTA Button */}
           <div className="text-center mt-12">
             <Link
-              href="mailto:investigacion.docente@institucion.edu"
+              href="mailto:amhfonseca@ucf.edu.cu"
               className="inline-flex items-center gap-2 bg-white text-blue-950 px-8 py-3 rounded-full font-semibold hover:scale-105 transition-transform duration-300 shadow-xl"
             >
               <span>✉️</span>

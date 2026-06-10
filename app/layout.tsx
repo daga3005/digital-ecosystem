@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Playfair_Display, DM_Sans } from "next/font/google"; 
 import "./globals.css";
 
-import Navbar from "./components/Header";
+import Navbar from "./components/header/Header";
 import FloatingSurveyButton from "./components/FloatingSurveyButton";
 import SurveyInvitation from "./components/SurveyInvitation";
 import ScrollToTopButton from "./components/ScrollToTopButton";

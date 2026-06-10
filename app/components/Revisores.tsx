@@ -33,24 +33,14 @@ export default function Revisores() {
         <div className="mx-auto w-24 h-1 rounded-full bg-gradient-to-r from-yellow-400/60 via-teal-400/80 to-blue-400/60" />
       </div>
 
-      {/* Cards grid: 3 top, 2 bottom centered */}
-      <div className="relative max-w-5xl mx-auto space-y-6">
-        {/* Row 1 — 3 cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {reviewers.slice(0, 3).map((r) => (
+      {/* Cards grid - todas las cards en una sola grid responsiva */}
+<div className="relative max-w-6xl mx-auto">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 auto-rows-fr">
+        {reviewers.map((r) => (
             <ReviewerCard key={r.id} reviewer={r} />
-          ))}
-        </div>
-
-        {/* Row 2 — 2 cards centered */}
-        <div className="flex flex-col sm:flex-row justify-center gap-6">
-          {reviewers.slice(3).map((r) => (
-            <div key={r.id} className="w-full sm:w-72">
-              <ReviewerCard reviewer={r} />
-            </div>
-          ))}
-        </div>
-      </div>
+        ))}
+    </div>
+</div>
 
     </section>
   );

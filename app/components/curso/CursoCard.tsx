@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-// app/components/RepoCard.tsx
+
 interface Repository {
   id: string
   titulo: string
@@ -47,7 +47,7 @@ export default function RepoCard({ repo }: { repo: Repository }) {
             group/btn
           "
         >
-          <span>Ver repositorio</span>
+          <span>Ver curso</span>
           <span className="group-hover/btn:translate-x-1 transition-transform duration-300">→</span>
         </Link>
         
